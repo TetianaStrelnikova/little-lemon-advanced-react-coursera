@@ -1,6 +1,6 @@
 import "./App.css";
 import DessertsList from "./DessertsList";
-
+import Form from "./Form";
 const desserts = [
   {
     name: "Chocolate Cake",
@@ -27,9 +27,13 @@ const desserts = [
 function App() {
   return (
     <div className="App">
+      
+      <div>
       <h2>List of low calorie desserts:</h2>
       <DessertsList data={desserts} />
-    </div>
+      </div>
+      <Form/>
+      </div>
   );
 }
 
